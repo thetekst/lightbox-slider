@@ -1,0 +1,110 @@
+/* LightBox*/
+#lightbox {
+	background-color: rgba(0, 0, 0, 0.8); /* black + some opacity */
+	display: none;
+	position: fixed;
+	z-index: 99999;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+#lightbox-child { 
+	background: none;
+	position: relative;
+}
+.close {
+	background-color: rgba(0, 0, 0, 0.8);
+	border: 2px solid #ccc;
+	height: 24px;
+	line-height: 24px;
+	position: absolute;
+	cursor: pointer;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+	font-size: 14px;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+	top: -24px;
+	width: 24px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	border-radius: 15px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	 box-shadow: 1px 1px 3px #000;
+	 behavior: url(./PIE-1.0.0/PIE.php); /* not PIE.htc for localhost and hosting */
+}
+.close:hover {
+	background-color: rgba(0, 122, 200, 0.8);
+}
+
+/*	thumbs	*/
+#parent-post-slider .bx-wrapper {
+	max-width: 644px !important;
+	margin: 0 0 120px 0;
+}
+
+#parent-post-slider .bx-wrapper .bx-pager {
+bottom: -120px;
+height:120px;
+overflow: hidden;
+text-align:left;
+margin-left:40px;
+}
+
+#parent-post-slider .bx-wrapper .bx-pager a {
+/*border: solid #ccc 1px;*/
+border: none;
+display: block;
+/*margin: 0 5px;*/
+padding: 0 1px;
+}
+
+#parent-post-slider .bx-wrapper .bx-pager a:hover,
+#parent-post-slider .bx-wrapper .bx-pager a.active {
+/*border: solid #5280DD 1px;*/
+border: none;
+opacity: 0.4;
+}
+
+/* CSS overriding */
+#parent-post-slider .bx-wrapper .bx-controls-direction a {
+	top: 119%;
+	width:13px;
+	height:25px;
+	margin-top:0px;
+}
+#parent-post-slider .bx-wrapper img {
+	border: none;
+}
+#parent-post-slider .bx-wrapper img:hover {
+	cursor:pointer;
+}
+
+#parent-post-slider .bx-wrapper .bx-prev {
+	left: 10px;
+	background: url(./img/scroll-left-40.gif) no-repeat 0 bottom;
+}
+#parent-post-slider .bx-wrapper .bx-prev:hover {
+	background: url(./img/scroll-left.gif) no-repeat 0 bottom;
+}
+#parent-post-slider .bx-wrapper .bx-next {
+	right: 10px;
+	background: url(./img/scroll-right-40.gif) no-repeat 0 0px;
+}
+#parent-post-slider .bx-wrapper .bx-next:hover {
+	background: url(./img/scroll-right.gif) no-repeat 0 0px;
+}
+
+#parent-post-slider .bx-wrapper .bx-viewport {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	left: 0;
+	background: #fff;
+}
